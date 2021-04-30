@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="survey.css">
+  <title>FCC Survey Form</title>
+</head>
+<body>
+  <article class="container">
+	<header class="header">
+	  <h1 id="title" class="title">Encuesta sobre el anime</h1>
+	  <p id="description" class="description">La encuesta es anónima y es importante tener presente que entendemos por anime a la animación japonesa.</p>
+	</header>
+	  <form id="survey-form" class="survey-form">
+		<article>
+		  <label for="name" id="name-label" class="input-text">Nombre</label>
+
+		  <input type="text" id="name" class="text" placeholder="Introduce tu nombre" required >
+		</article>
+		<article>
+		  <label for="email" id="email-label" class="input-text">E-mail</label>
+
+		  <input type="email" id="email" class="text" placeholder="Introduce tu email" required >
+		</article>
+		<article>
+		  <label for="number" id="number-label" class="input-text">Edad (Opcional)</label>
+		  <input type="number" id="number" min="12" max="99" class="text" placeholder="introduce tu edad">
+		</article>
+		<article>
+		  <p class="input-text">Que es anime</p>
+		  <section class="question">
+			  <label class="input-radio">
+				<input name="que" value="Dibujo animado" type="radio">
+				Dibujo animado
+			  </label>
+			  <label class="input-radio">
+				<input name="que" value="Animacion japonesa"  type="radio">
+				Animacion japonesa
+			  </label>
+			  <label class="input-radio">
+				<input name="que" value="Manga" type="radio">
+				Manga
+			  </label>
+		  </section>
+		</article>
+		<article>
+		  <p class="input-text">Veo anime porque</p>
+		  <section class="question">
+			  <label class="input-radio">
+				<input name="veo" value="Aprendo" type="radio">
+				Aprendo
+			  </label>
+			  <label class="input-radio">
+				<input name="veo" value="Me articleierte" type="radio">
+				Me articleierte
+			  </label>
+			  <label class="input-radio">
+				<input name="veo" value="Da Mensajes" type="radio">
+				Da Mensajes
+			  </label>
+			  <label class="input-radio">
+				<input name="veo" value="Creci viéndolo" type="radio">
+				Creci viéndolo
+			  </label>
+		  </section>
+		</article>
+		<article>
+		  <p class="input-text">El anime me hace sentir</p>
+		  <section class="question">
+			<label class="input-radio">
+			  <input name="sentir" value="Activación" type="radio">
+			  Activación
+			</label>
+			<label class="input-radio">
+			  <input name="sentir" value="Irritación" type="radio">
+			  Irritación
+			</label>
+			<label class="input-radio">
+			  <input name="sentir" value="Aburrimiento" type="radio">
+			  Aburrimiento
+			</label>
+			<label class="input-radio">
+			  <input name="sentir" value="Superación" type="radio">
+			  Superación
+			</label>
+			<label class="input-radio">
+			  <input name="sentir" value="Sociable" type="radio">
+			  Sociable
+			</label>
+		  </section>
+		</article>
+		<article>
+		  <p class="input-text">Prefiero ver animes de</p>
+		  <section class="question">
+			<label class="input-radio">
+			  <input name="prefiero" value="Acción" type="radio">
+			  Accion
+			</label>
+			<label class="input-radio">
+			  <input name="prefiero" value="Magia" type="radio">
+			  Magia
+			</label>
+			<label class="input-radio">
+			  <input name="prefiero" value="Ficción" type="radio">
+			  Ficción
+			</label>
+			<label class="input-radio">
+			  <input name="prefiero" value="Romance" type="radio">
+			  Romance
+			</label>
+			<label class="input-radio">
+			  <input name="prefiero" value="Deportes" type="radio">
+			  Deportes
+			</label>
+			<label class="input-radio">
+			  <input name="prefiero" value="Robots" type="radio">
+			  Robots
+			</label>
+		  </section>
+		</article>
+		<article>
+		  <p class="input-text">Si viera anime conoceria</p>
+		  <select name="conocer" id="dropdown" class="text">
+			<option value="Selecciona una opcion" disabled selected>Selecciona una opcion</option>
+			<option value="Cultura japonesa">Cultura japonesa</option>
+			<option value="Más gente">Más gente</option>
+			<option value="Waifus">Waifus</option>
+			<option value="Música">Música</option>
+		  </select>
+		</article>
+		<article>
+		  <p class="input-text">Cuales de estos animes has visto</p>
+		  <section class="question">
+			<label class="checkbox">
+			  <input type="checkbox" value="Naruto">
+			  Naruto
+			</label>
+			<label class="checkbox">
+			  <input type="checkbox" value="Bleach">
+			  Bleach  
+			</label>
+			<label class="checkbox">
+			  <input type="checkbox" value="Dragon Ball Z">
+			  Dragon Ball Z
+			</label>
+			<label class="checkbox">
+			  <input type="checkbox" value="Sword Art Online">
+			  Sword Art Online
+			</label>
+			<label class="checkbox">
+			  <input type="checkbox" value="High School DxD">
+			  High School DxD
+			</label>
+			<label class="checkbox">
+			  <input type="checkbox" value="Black Clover">
+			  Black Clover
+			</label>
+			<label class="checkbox">
+			  <input type="checkbox" value="Boku No Hero Academia">
+			  Boku No Hero Academia
+			</label>
+			<label class="checkbox">
+			  <input type="checkbox" value="Fairy Tail">
+			  Fairy Tail
+			</label>
+		  </section>
+		</article>
+		<article>
+		  <legend class="input-text">Cuentanos mas</legend>
+		  <textarea name="comment" id="comments" class="text box"></textarea>
+		</article>
+		<article>
+		  <button type="submit" id="submit" class="submit-button">
+			Listo
+		  </button>
+		</article>
+	  </form>
+  </article>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="landing.css">
+  <title>FCC: Product Landing Page</title>
+</head>
+<body>
+  <header id="header" class="header">
+	<nav class="nav-main" id="nav-bar">
+	  <img
+		src="./icons/E8xLPm224El8tHDiFH8ZMaajk.svg"
+		class="logo" alt="insertar" id="header-img">
+	  <ul class="nav-links">
+		<li><a class="nav-link" href="#features">Características</a></li>
+		<li><a class="nav-link" href="#video">Demostración del producto</a></li>
+		<li><a class="nav-link" href="#products">Productos disponibles</a></li>
+	  </ul>
+	</nav>
+  </header>
+  <div class="container">
+	<form id="form" action="https://www.freecodecamp.com/email-submit" class="form">
+	  <h1>Para obtener mas información</h1>
+	  <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+	  <input id="submit" type="submit" value="Get Started" class="btn">
+	</form>
+	<section class="features" id="features">
+	  <section class="features-description">
+		<img src="https://icon-icons.com/icons2/390/PNG/512/metal-bar_38206.png" class="icon"
+		  alt="Materiales exclusivos">
+		<p><strong>Materiales premium</strong><br> bicicletas utilizan el aluminio/carbono de mejor calidad que
+		  ofrece el mercado. Esto aumentará la longevidad de su compra.</p>
+	  </section>
+	  <section class="features-description">
+		<img src="https://image.flaticon.com/icons/svg/709/709790.svg" class="icon" alt="Entrega rápida">
+		<p><strong>Entrega rápida</strong><br>Nos aseguramos de que reciba su bicicleta tan pronto como hayamos
+		  terminado
+		  de hacerla. También proporcionamos
+		  devoluciones gratuitas si no está satisfecho.</p>
+	  </section>
+	  <section class="features-description">
+		<img src="https://image.flaticon.com/icons/svg/710/710078.svg" class="icon" alt="Calidad verificada">
+		<p><strong>Calidad verificada</strong><br>Por cada compra que realice, nos aseguraremos de que no haya daños o
+		  fallas.</p>
+	  </section>
+	</section>
+	<section class="demo">
+	  <iframe width="640" height="240" src="https://www.youtube.com/embed/csIwbYnfDG0" id="video" frameborder="0"
+		allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+	<section class="products" id="products">
+	  <div class="card">
+		<header class="legend">
+		  <h1>Bicicleta fixie</h1>
+		</header>
+		<h2>600.000 COP</h2>
+		<ul>
+		  <li>Ruedas delgadas tipo ruta</li>
+		  <li>Manubrio Bullhorn</li>
+		  <li>1 plato * 1 piñon</li>
+		</ul>
+		<button class="btn">select</button>
+	  </div>
+	  <div class="card">
+		<header class="legend">
+		  <h1>Bicicleta todo terreno</h1>
+		</header>
+		<h2>$900.000 COP</h2>
+		<ul>
+		  <li>Ruedas anchas (montaña)</li>
+		  <li>Manubrio recto</li>
+		  <li>3 platos * 8 piñones</li>
+		</ul>
+		<button class="btn">select</button>
+	  </div>
+	  <div class="card">
+		<header class="legend">
+		  <h1>Bicicleta ruta</h1>
+		</header>
+		<h2>3.200.000 COP</h2>
+		<ul>
+		  <li>Ruedas delgadas tipo ruta</li>
+		  <li>Manubrio Dropbar</li>
+		  <li>2 platos * 11 piñones</li>
+		</ul>
+		<button class="btn">select</button>
+	  </div>
+	</section>
+	<footer class="footer">
+	  <nav class="footer-main">
+		<ul class="footer-items">
+		  <li class="footer-item"><a href="#">Privacy</a></li>
+		  <li class="footer-item"><a href="#">Terms</a></li>
+		  <li class="footer-item"><a href="#">Contact</a></li>
+		</ul>
+		<p class="copyright">Copyright 2016, Bike Exchange</p>
+	  </nav>
+	</footer>
+  </div>
+</body>
+</html>

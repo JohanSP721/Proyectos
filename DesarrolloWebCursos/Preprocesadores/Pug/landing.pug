@@ -1,0 +1,14 @@
+extend components/template.pug
+block contenidos
+	main
+		section.intro
+			.intro__image: img(src="img/imagen.png")
+			.intro__contain
+				h2 #{titles[0]}
+				p Lorem ipsum dolor sit amet consectetur adipiscing elit. Proin ex mi, gravida sit amet imperdiet vel, sodales a mi. Proin sit amet tellus nec nisl bibendum ornare nec at augue. Integer semper feugiat varius.
+					span Proin sed urna quis orci interdum rutrum. Integer rhoncus finibus nunc, ac porttitor ex dapibus ac.
+				a.button Leer Más
+		section.cards-container
+			each title,i in titles
+				if i >= 1
+					+caja('imagen.png', title, 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Proin ex mi, gravida sit amet imperdiet vel, sodales a mi. Proin sit amet tellus nec nisl bibendum ornare nec at augue. Integer semper feugiat varius. Proin sed urna quis orci interdum rutrum. Integer rhoncus finibus nunc, ac porttitor ex dapibus ac.')

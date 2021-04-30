@@ -1,0 +1,34 @@
+import React, { Component } from 'react'
+
+class Post extends Component {
+	
+	state = 
+	{
+		posts: []
+	}
+	
+	async componentDidMount()
+	{
+		const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+		const data =  await res.json();
+		this.setState({posts: data});
+		console.log(data);
+	}
+	
+	render() {
+		return (
+			<section>
+				<h1>Posts</h1>
+				{
+					this.state.posts.map(post =>
+					<article key={post.id}>
+						<h1>{post.title}</h1>
+						<p>{post.body}</p>
+					</article>)
+				}
+			</section>
+		);
+	}
+};
+
+export default  Post;

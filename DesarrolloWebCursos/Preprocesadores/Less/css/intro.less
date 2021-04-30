@@ -1,0 +1,81 @@
+.intro
+{
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  position: relative;
+
+  &__imagen
+  {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    img
+    {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__contenido
+  {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: calc(50% - 18rem);
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: @light-color;
+  }
+
+  &__categoria
+  {
+    font-size: 1.5rem;
+    font-family: @font-2;
+    color: @light-transparent-color;
+    .Oswald;
+  }
+
+  &__titulo
+  {
+    font-size: 5rem;
+  }
+
+  &__actor
+  {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: calc(50% + 2rem);
+    left: 0;
+    right: 0;
+
+    img
+    {
+      width: 25%;
+      border-radius: 50%;
+      margin-right: 2rem;
+    }
+
+    &--principal
+    {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-size: 1.5rem;
+      color: @light-color;
+
+      &-titulo
+      {
+        color: @light-transparent-color;
+      }
+    }
+  }
+}

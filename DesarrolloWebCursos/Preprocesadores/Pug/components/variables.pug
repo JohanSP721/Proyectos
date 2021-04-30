@@ -1,0 +1,9 @@
+-let title = 'Sub-titulo Principal';
+-let titles = ['Titulo Principal', 'Subtitulo 1', 'Subtitulo 2', 'Subtitulo 3'];
+-let links = ['Acerca', 'Enlaces', 'Contacto'];
+mixin caja(imagen,titulo,contenido)
+	article.card
+		.card__image: img(src='img/' + imagen)
+		.card__contain
+			h3 #{titulo}
+			p #{contenido}

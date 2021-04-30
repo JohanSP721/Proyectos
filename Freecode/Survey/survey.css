@@ -1,0 +1,124 @@
+:root
+{
+	--color-white: hsl(0, 0%, 100%);
+	--color-darkblue: hsla(245, 100%, 10%);
+	--color-darkblue-alpha: hsla(220, 75%, 15%, 0.7);
+	--color-purple-light: hsla(300, 75%, 15%, 0.7);
+}
+
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	color: var(--color-white);
+}
+
+body:before
+{
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-color: var(--color-darkblue);
+	background-image: linear-gradient(45deg, var(--color-darkblue-alpha), var(--color-purple-light)), url(./images/anime.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.4;
+	color: var(--color-white);
+}
+
+.header
+{
+	font-size: 1.75em;
+	padding-bottom: 1em;
+}
+
+.description
+{
+	font-size: 0.5em;
+	margin-top: 1em;
+}
+
+.container
+{
+	text-align: center;
+	margin-top: 3.125em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+}
+
+.survey-form
+{
+	background-color: var(--color-darkblue-alpha);
+	box-sizing: border-box;
+	text-align: left;
+	font-size: 1em;
+	padding-top: 0.5em;
+}
+
+.input-text
+{
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+.text
+{
+	display: block;
+	width: 92.5%;
+	height: 2em;
+	margin-top: 0.5em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	background-color: var(--color-darkblue-alpha);
+	box-shadow: 0 6px 8px -7px var(--color-purple-light);
+}
+
+.box
+{
+	height: 10em;
+}
+
+.question
+{
+	padding-top: 0.2em;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.input-radio
+{
+	margin-left: 1em;
+	font-size: 0.75em;
+}
+
+.checkbox
+{
+	margin-left: 1em;
+	font-size: 0.75em;
+}
+
+.submit-button
+{
+	margin-top: 2em;
+	margin-right: 25%;
+	margin-bottom: 2em;
+	margin-left: 25%;
+	width: 50%;
+	height: 2em;
+	background-color: var(--color-darkblue-alpha);
+	box-shadow: 0 5px 10px -7px var(--color-purple-light);
+}

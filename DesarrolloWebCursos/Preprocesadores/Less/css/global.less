@@ -1,0 +1,40 @@
+@first-color: #333333;
+@light-color: #fff;
+@light-transparent-color: hsla(0, 50%, 100%, .5);
+@secondary-color: #8841DA;
+@variation-color: #012179;
+@font-1: 'Lato', sans-serif;
+@font-2: 'Oswald', sans-serif;
+
+.sombra-caja {
+	box-shadow: 0px 5px 15px 0px fade( @first-color, 50%); 
+}
+
+.Oswald {
+  font-family: @font-2;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.fuente(@font-size){
+	font-size: @font-size;
+	line-height: @font-size + 10%;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html
+{
+  font-family: @font-1;
+  font-size: 62.5%;
+}
+
+h1,h2,h3 {
+	.Oswald;
+}

@@ -1,0 +1,394 @@
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1
+{
+	margin-top: 0;
+}
+
+body
+{
+	font-size: 1em;
+	background-color: hsl(0, 0%, 25%);
+	width: 100%;
+}
+
+a
+{
+	text-decoration: none;
+	color: hsl(0, 100%, 100%);
+}
+
+ul
+{
+	list-style: none;
+}
+
+.logo
+{
+	width: 7em;
+}
+
+.header
+{
+	width: 100%;
+	position: fixed;
+	background-color: hsl(245, 0%, 25%);
+}
+
+.nav-main
+{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 0;
+}
+
+.nav-links
+{
+	display: flex;
+}
+
+.nav-link
+{
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.container
+{
+	width: 70%;
+	padding-top: 6em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form
+{
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.form h1
+{
+	margin-bottom: .5em;
+}
+
+#email
+{
+	display: block;
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.icon
+{
+	width: 6em;
+	margin-right: 5em;
+}
+
+.features
+{
+	max-width: 56.25em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.features-description
+{
+	display: flex;
+	align-items: center;
+}
+
+.demo
+{
+	display: flex;
+	justify-content: center;
+	margin: 5em 0;
+}
+
+#video
+{
+	width: 45em;
+	height: 22.5em;
+}
+
+.products
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card
+{
+	width: 20em;
+	text-align: center;
+	line-height: 2em;
+	border: 1px solid black;
+}
+
+.legend
+{
+	background-color: hsl(245, 0%, 20%);
+	height: auto;
+	margin-bottom: 1.5em;
+}
+
+.card h2
+{
+	margin: 1.2em;
+}
+
+.card ul li
+{
+	margin: 1em;
+}
+
+.btn
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 7em;
+	height: 3em;
+	margin: 1.5em;
+	background-color: hsl(245, 100%, 55%);
+}
+
+.footer
+{
+	margin-top: 1.5em;
+	background-color: hsl(245, 0%, 30%);
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer-main
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.footer-items
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-item
+{
+	padding: 1em;
+}
+
+.copyright
+{
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+@media (max-width: 90em)
+{
+	.card
+	{
+		width: 18em;
+	}
+}
+
+@media (max-width: 64em)
+{
+	.container
+	{
+		font-size: .8em;
+	}
+	
+	.demo
+	{
+		margin: 2em;
+	}
+	
+	.card
+	{
+		margin-bottom: 1em;
+		width: 15em;
+	}
+
+	.legend h1
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card h2
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card ul
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card ul li
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card .btn
+	{
+		margin: 0;
+		padding: 0;
+		width: 4em;
+		height: 1.5em;
+	}
+}
+
+@media (max-width: 45em)
+{
+	.nav-main
+	{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.nav-links
+	{
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.logo
+	{
+		width: 5em;
+		margin-bottom: .2em;
+	}
+
+	.container
+	{
+		width: 100vw;
+		padding-top: 8em;
+	}
+
+	.form
+	{
+		margin: 0;
+		padding: .5em;
+	}
+
+	.icon
+	{
+		margin: 0;
+	}
+
+	.features-description
+	{
+		flex-direction: column;
+		margin-bottom: .5em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.demo
+	{
+		display: flex;
+		justify-content: center;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.products
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card
+	{
+		margin-bottom: 1em;
+		width: 20em;
+		height: 24em;
+	}
+
+	.footer-main
+	{
+		align-items: center;
+	}
+
+	.footer-items
+	{
+		flex-direction: column;
+	}
+
+	.footer-item
+	{
+		padding: .3em;
+	}
+}
+
+@media (max-width: 21.875em)
+{
+	.container
+	{
+		width: 100vw;
+	}
+	
+	.card
+	{
+		width: 90%;
+		height: 16em;
+	}
+
+	.legend h1
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card h2
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card ul
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card ul li
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.card .btn
+	{
+		margin: 0;
+		padding: 0;
+		width: 4em;
+		height: 1.5em;
+	}
+}

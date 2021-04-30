@@ -1,0 +1,28 @@
+<input type="text" [(ngModel)]='title'>
+{{ title }}
+
+<app-product></app-product>
+
+<section [ngSwitch]="title">
+	<h1 *ngSwitchCase="'johan'">Este es Johan</h1>
+	<h1 *ngSwitchCase="'nicolas'">Este es Nicolas</h1>
+	<h1 *ngSwitchDefault>No hay Match</h1>
+</section>
+
+<button (click)="addItem()">Add Item</button>
+
+<ul>
+	<li *ngIf="items.length === 0 ">La lista esta vaciá</li>
+	<li *ngFor="let name of items; index as i">
+		{{ name }} {{i}}
+		<button (click)="deleteItem(i)">Delete Item</button>
+	</li>
+	
+</ul>
+
+<section *ngFor="let product of products">
+	<h2>{{ product.title }}</h2>
+	<img [src]="product.image" alt="" width="150px"/>
+	<p><b>{{ product.price }}</b></p>
+	<p>{{ product.description }}</p>
+</section>
