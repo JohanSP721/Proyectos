@@ -1,0 +1,42 @@
+.character__list
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button
+{
+	position: fixed;
+	bottom: 2rem;
+	right: 3rem;
+	z-index: 3;
+	width: 4.5rem;
+	height: 4.5rem;
+	background-color: #4c3394;
+	border: 1px solid #4c3394;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+	transition: all 0.5s ease-in-out;
+
+	&:hover
+	{
+		background-color: #8c43e6;
+		border: 1px solid #8c43e6;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 76rem)
+{
+	.character__list
+	{
+		display: block;
+		width: 80%;
+	}
+}
