@@ -1,3 +1,6 @@
 [submodule "DesarrolloWebCursos/PlatziStore"]
 	path = DesarrolloWebCursos/PlatziStore
 	url = https://github.com/JohanSP721/platzi-store.git
+[submodule "DesarrolloWebCursos/PlatziStoreBackend"]
+	path = DesarrolloWebCursos/PlatziStoreBackend
+	url = https://github.com/JohanSP721/platzi-store-backend.git
