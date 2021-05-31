@@ -11,6 +11,7 @@ while True:
 	tempMin = int( input( 'digite la temperatura minima registrada en el dia: ' ) )
 
 	if(tempMax == 0 and tempMin == 0):
+
 		break
 
 	totalDays = totalDays + 1
