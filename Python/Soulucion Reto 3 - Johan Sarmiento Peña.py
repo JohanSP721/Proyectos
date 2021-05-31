@@ -42,17 +42,11 @@ avgTempMin = 0 if goodDays == 0 else sumTempMin / goodDays
 
 percentDaysWithError = daysWithError * 100 / totalDays
 
-print( 'La salida de campo duro: ' )
-print( totalDays, 'días' )
-print( 'Los dias reportados con error fueron: ' )
-print( daysWithError, 'días' )
-print( 'de los cuales: ' )
-print( daysErrorLessThan5, 'fueron por temperaturas menores a 5' )
-print( daysErrorHigherThan35, 'fueron por temperaturas mayores a 35' )
-print( daysErrorOutOf5And35, 'fueron por ambas temperaturas fuera de rango' )
-print( 'La media de temperaturas maximas sin contar los errores fue: ' )
+print( totalDays )
+print( daysWithError )
+print( daysErrorLessThan5 )
+print( daysErrorHigherThan35 )
+print( daysErrorOutOf5And35 )
 print( avgTempMax )
-print( 'La media de temperaturas minimas sin contar los errores fue: ' )
 print( avgTempMin )
-print( 'Los dias con error representan un porcentaje de: ' )
 print( percentDaysWithError )
