@@ -7,3 +7,6 @@
 [submodule "DesarrolloWebCursos/TransformacionesyTrancisionesCSS"]
 	path = DesarrolloWebCursos/TransformacionesyTrancisionesCSS
 	url = https://github.com/JohanSP721/TransformacionesYTrancisionesCSS.git
+[submodule "DesarrolloWebCursos/AnimacionesCSS"]
+	path = DesarrolloWebCursos/AnimacionesCSS
+	url = https://github.com/JohanSP721/Animaciones-CSS.git
