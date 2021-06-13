@@ -35,7 +35,7 @@ hourValue = int( input() )
 
 normalHours = workingHours * hourValue if workingHours < 40 else 40 * hourValue
 
-extraHours = int(( workingHours - 40 ) * 1.5 * hourValue) if workingHours > 40 else 0
+extraHours = ( workingHours - 40 ) * 1.5 * hourValue if workingHours > 40 else 0
 
 grossSalary = calcGrossSalary( normalHours, extraHours )
 
@@ -70,5 +70,3 @@ print( severance )
 print( interestSeverance )
 
 print( holidays )
-
-
