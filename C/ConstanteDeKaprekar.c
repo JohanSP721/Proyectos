@@ -28,7 +28,7 @@ float evaluarResta (char fourA[])
 	fourD[1] = fourA[2];
 	fourD[2] = fourA[1];
 	fourD[3] = fourA[0];
-	
+
 	resta = atof(fourA) - atof(fourD);
 
 	return resta;
@@ -39,7 +39,7 @@ float numeroIteraciones (float numero)
 	int iteración = 0;
 	float resta = numero;
 	char four[4];
-	
+
 	float q = (int)(resta / 1111);
 	float z = resta - (1111 * q);
 
@@ -65,7 +65,7 @@ float numeroIteraciones (float numero)
 			}
 		}
 	}
-	
+
 	return iteración;
 }
 
@@ -73,7 +73,7 @@ int main(void)
 {
 	int casos, iteraciones, numero, i;
 	char four[4];
-	
+
 	scanf("%d", &casos);
 
 	for(i = 0; i < casos; i++)
@@ -82,4 +82,4 @@ int main(void)
 		iteraciones = numeroIteraciones(numero);
 		printf("%d", iteraciones);
 	}
-} 
+}

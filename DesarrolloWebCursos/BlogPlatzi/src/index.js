@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from "react-redux";
+import reduxThunk from 'redux-thunk'
 
-import './assets/styles/Global.css';
+import reducer from './reducers';
+
+import App from './routes/App';
+
+const initialState = {
+	users: [],
+	publications: [],
+	errorUsers: null,
+	loadingUsers: true,
+	errorPublications: null,
+	loadingPublications: true
+};
+
+const store = createStore(
+	reducer,
+	initialState,
+	applyMiddleware(reduxThunk)
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<Provider store={store}>
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>
+	</Provider>,
+	document.getElementById('root')
 );

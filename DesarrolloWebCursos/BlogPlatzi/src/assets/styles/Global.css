@@ -1,5 +1,4 @@
-*
-{
+* {
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -8,23 +7,12 @@
 	list-style: none;
 }
 
-html
-{
+html {
 	font-size: 62.5%;
-}
-a
-{
-	color: white;
-	text-decoration: none;
-}
-
-a:hover
-{
-	text-decoration: underline;
 }
 
 .margin {
-	margin: 100px;
+	margin: 10rem;
 }
 
 .table {
@@ -32,6 +20,18 @@ a:hover
 	text-align: left;
 	font-size: 1.6rem;
 }
+
 .table td {
 	padding: 1rem 0;
+}
+
+.nav {
+	background-color: #253A46;
+	padding: 2rem;
+	font-size: 2rem;
+}
+
+.nav__link {
+	color: white;
+	margin-right: 2rem;
 }
