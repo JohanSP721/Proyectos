@@ -10,3 +10,6 @@
 [submodule "DesarrolloWebCursos/AnimacionesCSS"]
 	path = DesarrolloWebCursos/AnimacionesCSS
 	url = https://github.com/JohanSP721/Animaciones-CSS.git
+[submodule "DesarrolloWebCursos/Curso-Practico-Javascript"]
+	path = DesarrolloWebCursos/Curso-Practico-Javascript
+	url = https://github.com/JohanSP721/Curso-Practico-Javascript.git
