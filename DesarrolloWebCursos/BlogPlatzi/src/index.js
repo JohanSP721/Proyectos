@@ -12,10 +12,19 @@ import App from './routes/App';
 const initialState = {
 	users: [],
 	publications: [],
+	chores: [],
 	errorUsers: null,
 	loadingUsers: true,
 	errorPublications: null,
-	loadingPublications: true
+	loadingPublications: true,
+	errorComments: null,
+	loadingComments: true,
+	errorChores: null,
+	loadingChores: true,
+	chore: {
+		userId: '',
+		title: ''
+	}
 };
 
 const store = createStore(

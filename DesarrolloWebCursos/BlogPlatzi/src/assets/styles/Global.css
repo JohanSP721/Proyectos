@@ -11,8 +11,34 @@ html {
 	font-size: 62.5%;
 }
 
+button {
+	padding: 1rem;
+	background-color: #253A46;
+	color: white;
+	display: block;
+	margin-top: 1rem;
+}
+
+button .margin {
+	padding: 1rem;
+	background-color: #253A46;
+	color: white;
+}
+
+label {
+	margin-right: 2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
 .margin {
 	margin: 10rem;
+	display: block;
 }
 
 .table {
@@ -34,4 +60,16 @@ html {
 .nav__link {
 	color: white;
 	margin-right: 2rem;
+}
+
+.publication_title {
+	cursor: pointer;
+}
+
+.chore {
+	margin-left: 4rem;
+}
+
+.user-chores {
+	margin-bottom: 1rem;
 }

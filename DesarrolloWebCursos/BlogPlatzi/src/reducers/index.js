@@ -1,4 +1,4 @@
-import { actions } from "../actions";
+import { actions } from "../actions/actions";
 
 const reducer = (state, action) =>
 {
@@ -14,13 +14,48 @@ const reducer = (state, action) =>
 				}
 			);
 
-		case actions.takePublicationsForUser:
+		case actions.updatePublications:
 			return(
 				{
 					...state,
 					publications: action.payload,
 					loadingUsers: false,
 					loadingPublications: false
+				}
+			)
+
+		case actions.updateComments:
+			return(
+				{
+					...state,
+					publications: action.payload,
+					loadingComments: false
+				}
+			)
+
+		case actions.takeAllChores:
+			return(
+				{
+					...state,
+					chores: action.payload,
+					loadingChores: false
+				}
+			)
+
+		case actions.createChore:
+			return (
+				{
+					...state,
+					chore: action.payload
+				}
+			)
+
+		case actions.saveChore:
+			return(
+				{
+					...state,
+					chores: [],
+					loadingChores: false
 				}
 			)
 
@@ -55,6 +90,40 @@ const reducer = (state, action) =>
 				{
 					...state,
 					loadingPublications: true
+				}
+			)
+
+		case actions.errorComments:
+			return (
+				{
+					...state,
+					errorComments: action.payload,
+					loadingComments: false
+				}
+			);
+
+		case actions.loadingComments:
+			return (
+				{
+					...state,
+					loadingComments: true
+				}
+			)
+
+		case actions.errorChores:
+			return (
+				{
+					...state,
+					errorChores: action.payload,
+					loadingChores: false
+				}
+			);
+
+		case actions.loadingChores:
+			return (
+				{
+					...state,
+					loadingChores: true
 				}
 			)
 

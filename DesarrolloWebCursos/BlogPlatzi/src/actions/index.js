@@ -1,13 +1,5 @@
 import axios from "axios";
-
-export const actions = {
-	takeAllUsers: 'TAKE_ALL_USERS',
-	takePublicationsForUser: 'TAKE_PUBLICATIONS_FOR_USER',
-	errorUsers: 'ERROR_MESSAGE_USERS',
-	loadingUsers: 'LOADING_USERS',
-	errorPublications: 'ERROR_MESSAGE_PUBLICATIONS',
-	loadingPublications: 'LOADING_PUBLICATIONS'
-};
+import { actions } from "./actions";
 
 export const takeAllUsers = () => async dispatch =>
 {
@@ -29,20 +21,133 @@ export const takeAllUsers = () => async dispatch =>
 			}
 		)
 
-	} catch (err)
+	}
+
+	catch (err)
 	{
 
 		dispatch(
 			{
 				type: actions.errorUsers,
-				payload: err.message
+				payload: 'Usuarios No Encontrados'
 			}
 		)
 
 	}
 };
 
-export const takePublicationsForUser = (key) => async (dispatch, getState) =>
+export const takeAllChores = () => async dispatch =>
+{
+	dispatch(
+		{
+			type: actions.loadingChores
+		}
+	)
+
+	try
+	{
+
+		const { data } = await axios.get('https://jsonplaceholder.typicode.com/todos');
+
+		dispatch(
+			{
+				type: actions.takeAllChores,
+				payload: data
+			}
+		)
+
+	}
+
+	catch (err)
+	{
+
+		dispatch(
+			{
+				type: actions.errorChores,
+				payload: 'Tareas No Encontradas'
+			}
+		)
+
+	}
+};
+
+export const updateChore = (choreId) => (dispatch, getState) =>
+{
+	const { chores } = getState();
+
+	const selectChore = chores.filter(chore => chore.id === choreId).shift();
+
+	const updateChore = {
+		...selectChore,
+		completed: !selectChore.completed
+	};
+
+	const updateChores = chores.map(chore =>
+	{
+		if(chore === selectChore)
+		{
+			chore = updateChore;
+		}
+
+		return chore;
+	});
+
+	dispatch(
+		{
+			type: actions.takeAllChores,
+			payload: updateChores
+		}
+	)
+};
+
+export const handleInput = e => (dispatch, getState) =>
+{
+	const { name, value } = e.target;
+	const { chore } = getState();
+
+	const newChore = { ...chore, [name]:value };
+
+	dispatch(
+		{
+			type: actions.createChore,
+			payload: newChore
+		}
+	)
+};
+
+export const saveChore = (newChore) => async (dispatch) =>
+{
+	dispatch(
+		{
+			type: actions.loadingChores
+		}
+	)
+
+	try
+	{
+		const { data } = await axios.post('https://jsonplaceholder.typicode.com/todos', newChore);
+
+		console.log(data);
+
+		dispatch(
+			{
+				type: actions.saveChore
+			}
+		)
+	}
+
+	catch (error)
+	{
+		dispatch(
+			{
+				type: actions.errorChores,
+				payload: 'intente mas tarde'
+			}
+		)
+	}
+};
+
+export const updatePublications = (key) => async (dispatch, getState) =>
 {
 	dispatch(
 		{
@@ -69,10 +174,10 @@ export const takePublicationsForUser = (key) => async (dispatch, getState) =>
 		));
 
 		publications =
-			[
-				...publications,
-				newPublications
-			]
+		[
+			...publications,
+			newPublications
+		]
 
 		const publicationId = publications.length
 
@@ -96,24 +201,124 @@ export const takePublicationsForUser = (key) => async (dispatch, getState) =>
 
 		dispatch(
 			{
-				type: actions.takePublicationsForUser,
+				type: actions.updatePublications,
 				payload: publications
 			}
 		)
 
-	} catch (err)
+	}
+
+	catch (err)
 	{
 		dispatch(
 			{
 				type: actions.errorPublications,
-				payload: err.message
+				payload: 'No es posible encontrar las publicaciones de '
 			}
 		)
 
 	}
 };
 
-export const openAndClose = () => dispatch =>
+export const openAndClose = (publicationId) => (dispatch, getState) =>
 {
-	
-}
+	const { publications:publicationsArray } = getState();
+
+	const publicationsUser = publicationsArray.find(publications => publications.find(p => p.id === publicationId));
+
+	const selectPublication = publicationsUser.filter(publication => publication.id === publicationId).shift();
+
+	const updatePublication = {
+		...selectPublication,
+		open: !selectPublication.open
+	};
+
+	const updatePublications = publicationsUser.map(publication =>
+	{
+		if(publication === selectPublication)
+		{
+			publication = updatePublication;
+		}
+
+		return publication;
+	});
+
+	const updatePublicationsArray = publicationsArray.map(publications =>
+	{
+		if(publications === publicationsUser)
+		{
+			publications = updatePublications;
+		}
+
+		return publications;
+	});
+
+	dispatch(
+		{
+			type: actions.updatePublications,
+			payload: updatePublicationsArray
+		}
+	)
+};
+
+export const takeComments = (publicationId) =>  async (dispatch, getState) =>
+{
+	dispatch(
+		{
+			type: actions.loadingComments
+		}
+	)
+
+	const { publications:publicationsArray } = getState();
+
+	const publicationsUser = publicationsArray.find(publications => publications.find(p => p.id === publicationId));
+
+	const selectPublication = publicationsUser.filter(publication => publication.id === publicationId).shift();
+
+	try
+	{
+		const { data } = await axios.get(`https://jsonplaceholder.typicode.com/comments?postId=${publicationId}`);
+
+		const updatePublication = {
+			...selectPublication,
+			comments: data
+		};
+
+		const updatePublications = publicationsUser.map(publication =>
+		{
+			if(publication === selectPublication)
+			{
+				publication = updatePublication;
+			}
+
+			return publication;
+		});
+
+		const updatePublicationsArray = publicationsArray.map(publications =>
+		{
+			if(publications === publicationsUser)
+			{
+				publications = updatePublications;
+			}
+
+			return publications;
+		});
+
+		dispatch(
+			{
+				type: actions.updateComments,
+				payload: updatePublicationsArray
+			}
+		)
+	}
+
+	catch (err)
+	{
+		dispatch(
+			{
+				type: actions.errorComments,
+				payload: 'Comentarios No Disponibles'
+			}
+		)
+	}
+};

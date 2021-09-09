@@ -6,14 +6,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { takeAllUsers } from '../actions';
 
 import Spinner from "../components/Spinner";
+import '../assets/styles/components/Icons.css';
 
 const Users = () =>
 {
-	const { users }= useSelector(state => state);
-
-	const { errorUsers: error } = useSelector(state => state);
-
-	const { loadingUsers: loading } = useSelector(state => state);
+	const { users, errorUsers: error, loadingUsers: loading } = useSelector(state => state);
 
 	const dispatch = useDispatch();
 
