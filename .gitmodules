@@ -16,3 +16,6 @@
 [submodule "DesarrolloWebCursos/ToDosReact"]
 	path = DesarrolloWebCursos/ToDosReact
 	url = https://github.com/JohanSP721/ToDosReact.git
+[submodule "DesarrolloWebCursos/ComplejidadAlgoritmicaJS"]
+	path = DesarrolloWebCursos/ComplejidadAlgoritmicaJS
+	url = https://github.com/JohanSP721/ComplejidadAlgoritmicaJS.git
