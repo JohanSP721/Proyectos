@@ -19,3 +19,6 @@
 [submodule "DesarrolloWebCursos/ComplejidadAlgoritmicaJS"]
 	path = DesarrolloWebCursos/ComplejidadAlgoritmicaJS
 	url = https://github.com/JohanSP721/ComplejidadAlgoritmicaJS.git
+[submodule "Portafolio"]
+	path = Portafolio
+	url = https://github.com/JohanSP721/Portafolio.git
