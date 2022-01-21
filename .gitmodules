@@ -22,3 +22,6 @@
 [submodule "Portafolio"]
 	path = Portafolio
 	url = https://github.com/JohanSP721/Portafolio.git
+[submodule "DesarrolloWebCursos/AngularRickAndMorty"]
+	path = DesarrolloWebCursos/AngularRickAndMorty
+	url = https://github.com/JohanSP721/AngularRickAndMorty.git
