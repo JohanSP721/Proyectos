@@ -25,3 +25,6 @@
 [submodule "DesarrolloWebCursos/AngularRickAndMorty"]
 	path = DesarrolloWebCursos/AngularRickAndMorty
 	url = https://github.com/JohanSP721/AngularRickAndMorty.git
+[submodule "DesarrolloWebCursos/ClonWikipedia"]
+	path = DesarrolloWebCursos/ClonWikipedia
+	url = https://github.com/JohanSP721/ClonWikipedia.git
