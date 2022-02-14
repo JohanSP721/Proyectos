@@ -28,3 +28,6 @@
 [submodule "DesarrolloWebCursos/ClonWikipedia"]
 	path = DesarrolloWebCursos/ClonWikipedia
 	url = https://github.com/JohanSP721/ClonWikipedia.git
+[submodule "DesarrolloWebCursos/SPA"]
+	path = DesarrolloWebCursos/SPA
+	url = https://github.com/JohanSP721/SPA.git
