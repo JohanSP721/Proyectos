@@ -31,3 +31,6 @@
 [submodule "DesarrolloWebCursos/SPA"]
 	path = DesarrolloWebCursos/SPA
 	url = https://github.com/JohanSP721/SPA.git
+[submodule "DesarrolloWebCursos/ReactPlatziStore"]
+	path = DesarrolloWebCursos/ReactPlatziStore
+	url = https://github.com/JohanSP721/ReactPlatziStore.git
