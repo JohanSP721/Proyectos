@@ -37,3 +37,6 @@
 [submodule "DesarrolloWebCursos/ReactPlatziVideo"]
 	path = DesarrolloWebCursos/ReactPlatziVideo
 	url = https://github.com/JohanSP721/ReactPlatziVideo.git
+[submodule "DesarrolloWebCursos/Puppeteer"]
+	path = DesarrolloWebCursos/Puppeteer
+	url = https://github.com/JohanSP721/Puppeteer.git
