@@ -40,6 +40,3 @@
 [submodule "DesarrolloWebCursos/Puppeteer"]
 	path = DesarrolloWebCursos/Puppeteer
 	url = https://github.com/JohanSP721/Puppeteer.git
-[submodule "PruebaTecnica"]
-	path = PruebaTecnica
-	url = https://github.com/JohanSP721/PruebaTecnica.git
