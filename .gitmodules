@@ -40,3 +40,6 @@
 [submodule "DesarrolloWebCursos/Puppeteer"]
 	path = DesarrolloWebCursos/Puppeteer
 	url = https://github.com/JohanSP721/Puppeteer.git
+[submodule "DesarrolloWebCursos/AngularPlatziStore"]
+	path = DesarrolloWebCursos/AngularPlatziStore
+	url = https://github.com/JohanSP721/AngularPlatziStore.git
