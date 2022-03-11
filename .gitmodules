@@ -43,3 +43,6 @@
 [submodule "DesarrolloWebCursos/AngularPlatziStore"]
 	path = DesarrolloWebCursos/AngularPlatziStore
 	url = https://github.com/JohanSP721/AngularPlatziStore.git
+[submodule "DesarrolloWebCursos/CodigosSeguridadReact"]
+	path = DesarrolloWebCursos/CodigosSeguridadReact
+	url = https://github.com/JohanSP721/CodigosSeguridadReact.git
