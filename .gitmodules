@@ -46,3 +46,6 @@
 [submodule "DesarrolloWebCursos/CodigosSeguridadReact"]
 	path = DesarrolloWebCursos/CodigosSeguridadReact
 	url = https://github.com/JohanSP721/CodigosSeguridadReact.git
+[submodule "PruebaTecnica"]
+	path = PruebaTecnica
+	url = https://github.com/JohanSP721/PruebaTecnica.git
