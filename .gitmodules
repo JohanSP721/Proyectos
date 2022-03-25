@@ -1,54 +1,54 @@
 [submodule "DesarrolloWebCursos/PlatziStore"]
 	path = DesarrolloWebCursos/PlatziStore
-	url = https://github.com/JohanSP721/platzi-store.git
+	url = git@github.com:JohanSP721/platzi-store.git
 [submodule "DesarrolloWebCursos/PlatziStoreBackend"]
 	path = DesarrolloWebCursos/PlatziStoreBackend
-	url = https://github.com/JohanSP721/platzi-store-backend.git
+	url = git@github.com:JohanSP721/platzi-store-backend.git
 [submodule "DesarrolloWebCursos/TransformacionesyTrancisionesCSS"]
 	path = DesarrolloWebCursos/TransformacionesyTrancisionesCSS
-	url = https://github.com/JohanSP721/TransformacionesYTrancisionesCSS.git
+	url = git@github.com:JohanSP721/TransformacionesYTrancisionesCSS.git
 [submodule "DesarrolloWebCursos/AnimacionesCSS"]
 	path = DesarrolloWebCursos/AnimacionesCSS
-	url = https://github.com/JohanSP721/Animaciones-CSS.git
+	url = git@github.com:JohanSP721/Animaciones-CSS.git
 [submodule "DesarrolloWebCursos/Curso-Practico-Javascript"]
 	path = DesarrolloWebCursos/Curso-Practico-Javascript
-	url = https://github.com/JohanSP721/Curso-Practico-Javascript.git
+	url = git@github.com:JohanSP721/Curso-Practico-Javascript.git
 [submodule "DesarrolloWebCursos/ToDosReact"]
 	path = DesarrolloWebCursos/ToDosReact
-	url = https://github.com/JohanSP721/ToDosReact.git
+	url = git@github.com:JohanSP721/ToDosReact.git
 [submodule "DesarrolloWebCursos/ComplejidadAlgoritmicaJS"]
 	path = DesarrolloWebCursos/ComplejidadAlgoritmicaJS
-	url = https://github.com/JohanSP721/ComplejidadAlgoritmicaJS.git
+	url = git@github.com:JohanSP721/ComplejidadAlgoritmicaJS.git
 [submodule "Portafolio"]
 	path = Portafolio
-	url = https://github.com/JohanSP721/Portafolio.git
+	url = git@github.com:JohanSP721/Portafolio.git
 [submodule "DesarrolloWebCursos/AngularRickAndMorty"]
 	path = DesarrolloWebCursos/AngularRickAndMorty
-	url = https://github.com/JohanSP721/AngularRickAndMorty.git
+	url = git@github.com:JohanSP721/AngularRickAndMorty.git
 [submodule "DesarrolloWebCursos/ClonWikipedia"]
 	path = DesarrolloWebCursos/ClonWikipedia
-	url = https://github.com/JohanSP721/ClonWikipedia.git
+	url = git@github.com:JohanSP721/ClonWikipedia.git
 [submodule "DesarrolloWebCursos/SPA"]
 	path = DesarrolloWebCursos/SPA
-	url = https://github.com/JohanSP721/SPA.git
+	url = git@github.com:JohanSP721/SPA.git
 [submodule "DesarrolloWebCursos/ReactPlatziStore"]
 	path = DesarrolloWebCursos/ReactPlatziStore
-	url = https://github.com/JohanSP721/ReactPlatziStore.git
+	url = git@github.com:JohanSP721/ReactPlatziStore.git
 [submodule "DesarrolloWebCursos/ReactPlatziVideo"]
 	path = DesarrolloWebCursos/ReactPlatziVideo
-	url = https://github.com/JohanSP721/ReactPlatziVideo.git
+	url = git@github.com:JohanSP721/ReactPlatziVideo.git
 [submodule "DesarrolloWebCursos/Puppeteer"]
 	path = DesarrolloWebCursos/Puppeteer
-	url = https://github.com/JohanSP721/Puppeteer.git
+	url = git@github.com:JohanSP721/Puppeteer.git
 [submodule "DesarrolloWebCursos/AngularPlatziStore"]
 	path = DesarrolloWebCursos/AngularPlatziStore
-	url = https://github.com/JohanSP721/AngularPlatziStore.git
+	url = git@github.com:JohanSP721/AngularPlatziStore.git
 [submodule "DesarrolloWebCursos/CodigosSeguridadReact"]
 	path = DesarrolloWebCursos/CodigosSeguridadReact
-	url = https://github.com/JohanSP721/CodigosSeguridadReact.git
+	url = git@github.com:JohanSP721/CodigosSeguridadReact.git
 [submodule "PruebaTecnica"]
 	path = PruebaTecnica
-	url = https://github.com/JohanSP721/PruebaTecnica.git
+	url = git@github.com:JohanSP721/PruebaTecnica.git
 [submodule "DesarrolloWebCursos/ReactPlatziShop"]
 	path = DesarrolloWebCursos/ReactPlatziShop
 	url = git@github.com:JohanSP721/ReactPlatziShop.git
