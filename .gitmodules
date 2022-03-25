@@ -49,3 +49,6 @@
 [submodule "PruebaTecnica"]
 	path = PruebaTecnica
 	url = https://github.com/JohanSP721/PruebaTecnica.git
+[submodule "DesarrolloWebCursos/ReactPlatziShop"]
+	path = DesarrolloWebCursos/ReactPlatziShop
+	url = git@github.com:JohanSP721/ReactPlatziShop.git
