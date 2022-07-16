@@ -52,3 +52,6 @@
 [submodule "DesarrolloWebCursos/ReactPlatziShop"]
 	path = DesarrolloWebCursos/ReactPlatziShop
 	url = git@github.com:JohanSP721/ReactPlatziShop.git
+[submodule "DesarrolloWebCursos/ExpressAPI"]
+	path = DesarrolloWebCursos/ExpressAPI
+	url = git@github.com:JohanSP721/ExpressAPI.git
