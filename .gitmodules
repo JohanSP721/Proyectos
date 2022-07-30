@@ -55,3 +55,6 @@
 [submodule "DesarrolloWebCursos/ExpressAPI"]
 	path = DesarrolloWebCursos/ExpressAPI
 	url = git@github.com:JohanSP721/ExpressAPI.git
+[submodule "TechnicalTestLeanware"]
+	path = TechnicalTestLeanware
+	url = git@github.com:JohanSP721/TechnicalTestLeanware.git
