@@ -60,4 +60,4 @@
 	url = git@github.com:JohanSP721/TechnicalTestLeanware.git
 [submodule "Angular"]
 	path = Angular
-	url = ./Angular
+	url = git@github.com:JohanSP721/Angular.git
