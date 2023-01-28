@@ -58,3 +58,6 @@
 [submodule "TechnicalTestLeanware"]
 	path = TechnicalTestLeanware
 	url = git@github.com:JohanSP721/TechnicalTestLeanware.git
+[submodule "Angular"]
+	path = Angular
+	url = ./Angular
